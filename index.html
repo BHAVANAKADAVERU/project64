@@ -1,0 +1,85 @@
+<html>
+<head>
+    <title>SHOPPING WEBSITE</title>
+    <style>
+       
+    .CONTAINER {
+        width: 100vw; /* 100% of viewport width */
+        height: 100vh; /* 100% of viewport height */
+        margin: 0;
+        padding: 0;
+        box-shadow: #d46a2c;
+        background-image: url("images\shoppwall.jpg");
+        background-size: cover; /* Make the background image cover the entire container */
+        background-position: center; /* Center the background image */
+        background-repeat: no-repeat; /* Do not repeat the background image */
+    }
+
+    .checkOut {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%; /* Make .checkOut take 100% of the .CONTAINER height */
+    }
+
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background-color: mediumturquoise;
+        color: rgb(255, 255, 255);
+    }
+
+    button {
+        background-color: #00859c;
+        color: #000000;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+
+    button:hover {
+        background-color: blue;
+    }
+
+
+
+        /* Media Queries for smaller screens */
+        @media screen and (max-width: 600px) {
+            .CONTAINER {
+                width: 150%;
+                height: auto;
+                padding: 20px;
+                margin: 50px auto;
+            }
+
+            body {
+                width: 100%;
+                padding: 5px;
+            }
+
+            .checkOut {
+                margin: 10%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="CONTAINER">
+        <div class="checkOut">
+            <p>
+                <h1><I><B>WELCOME TO E COMMERCE SHOPPING WEBSITE</B></I> </h1></p><BR>
+            <button onclick="check()"><h1>GET STARTED</h1></button>
+        </div>
+    </div>
+
+    <script>
+        function check() {
+            window.location.href = "login.html";
+        }
+    </script>
+</body>
+</html>
